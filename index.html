@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department - K. Ramakrishnan College of Engineering</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="curriculum.js"></script>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="tech-bg"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code me-2"></i>CSE KRCE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Curriculum
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#curriculum-2020">Regulation 2020</a></li>
+                            <li><a class="dropdown-item" href="#curriculum-2023">Regulation 2023</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#highlights">Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Computer Science &
+                            <span class="text-gradient">Engineering</span>
+                        </h1>
+                        <p class="hero-subtitle">K. Ramakrishnan College of Engineering</p>
+                        <p class="hero-description">
+                            Empowering the next generation of technologists with cutting-edge education, 
+                            innovative research, and industry-relevant skills in computer science and engineering.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-primary btn-glow me-3">Explore Department</a>
+                            <a href="#curriculum" class="btn btn-outline-primary">View Curriculum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line">
+                                    <span class="keyword">class</span> 
+                                    <span class="class-name">CSEDepartment</span>:
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="keyword">def</span> 
+                                    <span class="function">__init__</span>(self):
+                                </div>
+                                <div class="code-line indent-2">
+                                    self.mission = <span class="string">"Innovation"</span>
+                                </div>
+                                <div class="code-line indent-2">
+                                    self.vision = <span class="string">"Excellence"</span>
+                                </div>
+                                <div class="code-line indent-2">
+                                    self.values = <span class="string">"Growth"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">About Our Department</h2>
+                        <p class="section-subtitle">Leading the future of technology education</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Academic Excellence</h4>
+                        <p>Comprehensive 4-year B.Tech program with industry-aligned curriculum and hands-on learning approach.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Research & Innovation</h4>
+                        <p>State-of-the-art laboratories and research facilities fostering innovation in emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4>Industry Connect</h4>
+                        <p>Strong industry partnerships providing internships, placements, and real-world project opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="section bg-dark-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Curriculum & Syllabus</h2>
+                        <p class="section-subtitle">Two regulations for comprehensive education</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Regulation Toggle -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6">
+                    <div class="regulation-toggle">
+                        <button class="btn btn-toggle active" data-regulation="2020">
+                            Regulation 2020
+                            <small class="d-block">Current 3rd Year & Below</small>
+                        </button>
+                        <button class="btn btn-toggle" data-regulation="2023">
+                            Regulation 2023
+                            <small class="d-block">Current 4th Year & Above</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regulation 2020 Content -->
+            <div id="curriculum-2020" class="curriculum-content active">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 1</h4>
+                                <span class="year-badge">Foundation</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Mathematics I & II</li>
+                                <li>Physics & Chemistry</li>
+                                <li>Engineering Graphics</li>
+                                <li>Programming in C</li>
+                                <li>English & Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 2</h4>
+                                <span class="year-badge">Core Basics</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Data Structures</li>
+                                <li>Digital Logic Design</li>
+                                <li>Computer Organization</li>
+                                <li>Object Oriented Programming</li>
+                                <li>Discrete Mathematics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 3</h4>
+                                <span class="year-badge">Advanced</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Database Management</li>
+                                <li>Computer Networks</li>
+                                <li>Operating Systems</li>
+                                <li>Software Engineering</li>
+                                <li>Web Technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 4</h4>
+                                <span class="year-badge">Specialization</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Machine Learning</li>
+                                <li>Cloud Computing</li>
+                                <li>Cybersecurity</li>
+                                <li>Final Year Project</li>
+                                <li>Industry Internship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regulation 2023 Content -->
+            <div id="curriculum-2023" class="curriculum-content">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 1</h4>
+                                <span class="year-badge">Foundation</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Calculus & Linear Algebra</li>
+                                <li>Applied Physics</li>
+                                <li>Engineering Chemistry</li>
+                                <li>Programming Fundamentals</li>
+                                <li>Technical Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 2</h4>
+                                <span class="year-badge">Core Development</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Advanced Data Structures</li>
+                                <li>Computer Architecture</li>
+                                <li>Algorithm Design</li>
+                                <li>System Programming</li>
+                                <li>Statistics & Probability</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 3</h4>
+                                <span class="year-badge">Professional</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Advanced DBMS</li>
+                                <li>Network Security</li>
+                                <li>Distributed Systems</li>
+                                <li>AI & ML Fundamentals</li>
+                                <li>Mobile App Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="year-card">
+                            <div class="year-header">
+                                <h4>Year 4</h4>
+                                <span class="year-badge">Expertise</span>
+                            </div>
+                            <ul class="subject-list">
+                                <li>Deep Learning</li>
+                                <li>DevOps & Containerization</li>
+                                <li>Blockchain Technology</li>
+                                <li>Capstone Project</li>
+                                <li>Professional Practice</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Recent Events</h2>
+                        <p class="section-subtitle">Stay updated with our latest activities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-content">
+                            <h5>TechFest 2025</h5>
+                            <p>Annual technical symposium featuring competitions, workshops, and guest lectures from industry experts.</p>
+                            <div class="event-meta">
+                                <i class="fas fa-clock me-2"></i>9:00 AM - 5:00 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">08</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-content">
+                            <h5>AI/ML Workshop</h5>
+                            <p>Hands-on workshop on machine learning algorithms and practical implementation using Python and TensorFlow.</p>
+                            <div class="event-meta">
+                                <i class="fas fa-clock me-2"></i>2:00 PM - 4:00 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">01</span>
+                            <span class="month">JUN</span>
+                        </div>
+                        <div class="event-content">
+                            <h5>Industry Talk: Cloud Computing</h5>
+                            <p>Guest lecture by AWS Solutions Architect on cloud technologies and career opportunities.</p>
+                            <div class="event-meta">
+                                <i class="fas fa-clock me-2"></i>11:00 AM - 12:30 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="section bg-dark-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Department Highlights</h2>
+                        <p class="section-subtitle">Our achievements and milestones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="highlight-number">500+</div>
+                        <div class="highlight-text">Students Enrolled</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="highlight-number">25+</div>
+                        <div class="highlight-text">Expert Faculty</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="highlight-number">95%</div>
+                        <div class="highlight-text">Placement Rate</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="highlight-number">50+</div>
+                        <div class="highlight-text">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-subtitle">Connect with our department</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Address</h5>
+                                <p>K. Ramakrishnan College of Engineering<br>
+                                Samayapuram, Trichy - 621112<br>
+                                Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone</h5>
+                                <p>+91 431 250 3000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p>cse@krce.ac.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-glow">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Department of Computer Science & Engineering, K. Ramakrishnan College of Engineering. All rights reserved.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
