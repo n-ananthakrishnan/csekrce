@@ -117,3 +117,115 @@ function initNavbar() {
             }
         });
     });
+}
+
+// Curriculum Toggle
+function initCurriculumToggle() {
+    const toggleButtons = document.querySelectorAll('.btn-toggle');
+    const contents = document.querySelectorAll('.curriculum-content');
+    toggleButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active from all buttons
+            toggleButtons.forEach(b => b.classList.remove('active'));
+            // Hide all contents
+            contents.forEach(c => c.classList.remove('active'));
+            // Activate clicked button and corresponding content
+            btn.classList.add('active');
+            const reg = btn.getAttribute('data-regulation');
+            document.getElementById('curriculum-' + reg).classList.add('active');
+        });
+    });
+}
+
+// Smooth Scrolling
+function initSmoothScrolling() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// Animations
+function initAnimations() {
+    // Add your animation initialization code here
+    document.querySelectorAll('.section').forEach(section => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+        observer.observe(section);
+    });
+}
+
+// Contact Form
+function initContactForm() {
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission code here
+    });
+}
+
+// Typewriter Effect
+function initTypewriterEffect() {
+    const typewriterElements = document.querySelectorAll('.typewriter');
+    typewriterElements.forEach(el => {
+        const text = el.innerHTML;
+        el.innerHTML = '';
+        let index = 0;
+        function type() {
+            if (index < text.length) {
+                el.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            }
+        }
+        type();
+    });
+}
+
+// Parallax Effects
+function initParallaxEffects() {
+    const parallaxElements = document.querySelectorAll('.parallax');
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        parallaxElements.forEach(el => {
+            const speed = el.getAttribute('data-speed');
+            el.style.transform = 'translateY(' + (scrollPosition * speed) + 'px)';
+        });
+    });
+}
+
+// Counter Animations
+function initCounterAnimations() {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const increment = target / 200;
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCount();
+    });
+}
+
+// No changes needed here for modal/typewriter (handled in HTML inline script)
